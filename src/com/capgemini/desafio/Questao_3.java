@@ -33,11 +33,9 @@ public class Questao_3 {
 				++tamanhoIndividual;
 			}
 				impar = anagrama.substring(indiceHorario, indiceHorario + tamanhoIndividual);
-				System.out.println("Impar "+ impar);
 				indiceHorario ++;
 			for(int j = indiceHorario; j + tamanhoIndividual <= tamanhoTotal; j++){
 				par = anagrama.substring(j, j + tamanhoIndividual);
-				System.out.println("Par " + par);
 				if(sortAnagram(par).equals(sortAnagram(impar))){
 					anagramasPares++;
 				}
@@ -54,7 +52,7 @@ public class Questao_3 {
 			}
 
 		System.out.println(anagramasPares);
-		sortAnagram(anagrama);
+
 	}
 	
 	/*
