@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 import java.util.regex.Pattern;
 // questão 2 do desafio capgemini 2022
-public class Questao_2 {
+public class SenhaSegura {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);

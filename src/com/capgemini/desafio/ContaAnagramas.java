@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Questao_3 {
+public class ContaAnagramas {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);

@@ -3,9 +3,11 @@ package com.capgemini.desafio;
 import java.util.Scanner;
 
 //questão 1 do desafio capgemini 2022 
-public class Questao_1 {
+public class EscreverEscada {
 
-	public static void main(String [] args) {
+	
+	
+	public static void main(String  args []) {
 		Scanner s = new Scanner(System.in);
 		int tamanho = s.nextInt();
 		escreverEscada(tamanho);
