@@ -22,23 +22,37 @@ public class Questao_3 {
 	public static void obterAnagramasPares(String anagrama) {
 		String impar, par;
 		int anagramasPares = 0;
-		int tamanhoIndividual = 1;
+		int tamanhoIndividual = 0;
+		int indiceHorario =0;
 		int tamanhoTotal = anagrama.length();
-		for(int x = 0; x < tamanhoTotal; x++){
-			for(int i =0; i < tamanhoTotal; i++) {
-				impar = anagrama.substring(i, i + tamanhoIndividual);
-				System.out.println("Impar "+impar);
-				for(int j = tamanhoTotal; j > tamanhoIndividual; j -= tamanhoIndividual) {
-					par = anagrama.substring(j - tamanhoIndividual, j);
-					System.out.println("Par "+par);
-				}
-				
-				
-				
-			}
-			tamanhoIndividual ++;
-		}
 		
+		// for externo para o primeiro indice do anagrama
+		for(int x= 0; x + tamanhoIndividual <= tamanhoTotal; x++){
+			
+			if(tamanhoIndividual == 0){
+				++tamanhoIndividual;
+			}
+				impar = anagrama.substring(indiceHorario, indiceHorario + tamanhoIndividual);
+				System.out.println("Impar "+ impar);
+				indiceHorario ++;
+			for(int j = indiceHorario; j + tamanhoIndividual <= tamanhoTotal; j++){
+				par = anagrama.substring(j, j + tamanhoIndividual);
+				System.out.println("Par " + par);
+				if(sortAnagram(par).equals(sortAnagram(impar))){
+					anagramasPares++;
+				}
+
+			}
+			
+			
+            if(x + tamanhoIndividual >= tamanhoTotal && tamanhoIndividual + 1 < tamanhoTotal){
+            	x = 0;
+            	tamanhoIndividual++;
+            	indiceHorario =0;
+            }
+
+			}
+
 		System.out.println(anagramasPares);
 		sortAnagram(anagrama);
 	}
@@ -52,7 +66,7 @@ public class Questao_3 {
 		String[] unsorted = substringAnagram.split("");
 		Arrays.sort(unsorted);
 		String sorted = String.join("", unsorted);
-		return substringAnagram;
+		return sorted;
 		
 		
 	}

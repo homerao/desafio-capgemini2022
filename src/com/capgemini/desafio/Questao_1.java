@@ -1,10 +1,14 @@
 package com.capgemini.desafio;
 
+import java.util.Scanner;
+
 //questão 1 do desafio capgemini 2022 
 public class Questao_1 {
 
 	public static void main(String [] args) {
-		escreverEscada(12);
+		Scanner s = new Scanner(System.in);
+		int tamanho = s.nextInt();
+		escreverEscada(tamanho);
 	}
 	/*
 	 * método para escrever a escada no console
