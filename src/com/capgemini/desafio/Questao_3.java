@@ -15,8 +15,8 @@ public class Questao_3 {
 	}
 	
 	/*
-	 * @method
-	 * @param anagrama
+	 * @method método para obter os anagramas pares
+	 * @param anagrama a string que contem os anagramas
 	 * método utilizado para obter todos os anagramas possíveis
 	 * */
 	public static void obterAnagramasPares(String anagrama) {
@@ -42,7 +42,7 @@ public class Questao_3 {
 
 			}
 			
-			
+			// este if verifica se o tamanho do anagrama dentro da string deve aumentar
             if(x + tamanhoIndividual >= tamanhoTotal && tamanhoIndividual + 1 < tamanhoTotal){
             	x = 0;
             	tamanhoIndividual++;
@@ -56,9 +56,9 @@ public class Questao_3 {
 	}
 	
 	/*
-	 * @method 
+	 * @method  este método é utilizado para ordenar a substring do anagrama
 	 * @param substringAnagram
-	 * método para ordenar a substring do anagrama
+	 * @return retona a substring do anagrama ordenada
 	 * */
 	public static String sortAnagram(String substringAnagram) {
 		String[] unsorted = substringAnagram.split("");
