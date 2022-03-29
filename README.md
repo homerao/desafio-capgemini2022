@@ -6,7 +6,7 @@
 Este é um projeto para a seleção de novos desenvolvedores da capgemini 2022
 
 Este projeto tem como objetivo avaliar as habilidades em lógica de programação.
-São pequenos problemas que podem ser resolvidos em qualquer linguágem de programação mas de preferência em java.
+São pequenos problemas que podem ser resolvidos em qualquer linguagem de programação mas de preferência em java.
 
 
 # Tecnologias utilizadas
